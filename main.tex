@@ -1,0 +1,93 @@
+\input{./src/main.sty}
+% Additional SI unit for Fahrenheit
+\DeclareSIUnit\fahrenheit{\degree F}
+
+\begin{document}
+
+% Include title page
+\input{./src/titlepage.tex}
+
+\pagebreak
+
+\begin{enumerate}
+    \item 
+        \begin{enumerate}[a.]
+            \item (5 points) How many possible microstates exist for a system containing eight atoms of element
+            A and one atom of element B? Draw all possible microstates for such a system on a three-by-three
+            two-dimensional lattice.
+            \item (5 points) How many possible microstates exist for a system containing four atoms of element A,
+            two atoms of element B, and three atoms of element C?
+        \item (5 points) The following lattices show microstates of a 4x4 lattice. Which is the most probable
+            microstate consistent with the macrostate of being \SI{50}{\percent} occupied. Explain your answer.
+        \end{enumerate}
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.6\textwidth]{./assets/fig_1.png}
+    \end{figure}
+
+    \pagebreak
+
+    \item Consider a small colloidal glass bead of mass m in a container of water held at temperature $T$. The
+    gravitational potential energy $U$ of the glass particle depends on its height above the bottom of the
+    container z: $U(z) = mgz$, where $g$ is the acceleration due to gravity.
+
+    \begin{enumerate}
+        \item Determine the probability $P(z)$ that the bead is found at a certain height $z$. Normalize the
+            probability distribution such that $\int_0^\infty P(z) = 1$.
+        \item Calculate the average height of the bead $\langle z\rangle$. Under what conditions would we expect particles
+            to “sediment” out of a solution?
+        \item In the high temperature limit (or $T \rightarrow \infty$), where can we expect to find the bead? \label{c}
+        \item Calculate the variance of the bead height $\langle z^2\rangle - \langle z\rangle^2$. \label{d}
+        \item Given what we have learned in part \ref{d}, re-interpret your answer to part \ref{c}. That is, at any
+            instant in time, where might the bead be found at high temperatures?
+        \item Calculate the average energy $\langle U \rangle$.
+    \end{enumerate}
+    
+    \pagebreak
+
+    \item One simple model of a crystal consists of a collection of masses and springs. Consider one particular
+        “normal mode” of the crystal, characterized by natural frequency $\omega$. The vibrational energy associated
+        with this normal mode can be quantized such that the $n$\textsuperscript{th} energy level is given by
+
+    \begin{equation*}
+        \epsilon_n = \left(n + \frac{1}{2}\right)\hbar \omega
+    \end{equation*}
+
+
+    where $n = 0, 1, 2, \dots$ and $\hbar$ is Planck’s constant divided by $2\pi$. This is called the “Einstein model”
+    of a crystalline solid.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.4\textwidth]{./assets/fig_2.png}
+    \end{figure}
+    
+    \begin{enumerate}[(a)]
+
+        \item Calculate the partition function $Z$. To simplify, take advantage of the formula for a convergent
+            geometric series:
+
+        \begin{equation*}
+            \sum_{n=0}^\infty x^n = \frac{1}{1 - x}
+        \end{equation*}
+
+        \item Calculate the entropy, internal energy, and Helmholtz free energy of the crystal. 
+            You can express your results in terms of the “Einstein temperature” $\vartheta_E  ≡ \hbar \omega/k_B$. 
+            (Note that for diamonds, $\vartheta_E \approx \SI{1320}{K}$.)
+
+        \item Calculate the molar heat capacity $C_V$ . Plot $C_V /k_B$ as a function of $T /\vartheta_E$. (This model actually
+            does a good job at capturing the high-temperature behavior of real crystals! The low-temperature
+            requires some corrections, however.)
+    \end{enumerate}
+
+
+
+
+    
+\end{enumerate}
+
+% \section*{Supporting code:}
+% \inputminted{julia}{./calculations/src/calculations.jl}
+
+\end{document}
