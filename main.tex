@@ -15,16 +15,71 @@
             \item (5 points) How many possible microstates exist for a system containing eight atoms of element
             A and one atom of element B? Draw all possible microstates for such a system on a three-by-three
             two-dimensional lattice.
+
+            \boxedanswer{
+                This problem consists of 8 atoms and 9 possible spaces. As such, 
+                it can be expressed as:
+
+                \begin{align*}
+                    C(n,r) &= \frac{n!}{r!(n-r)!} \\
+                           & \begin{aligned}
+                               n &= 9 \\
+                               n &= 8 \\
+                           \end{aligned} \\
+                    C(9,8) &= \frac{9!}{8!\overbrace{1!}^1} \\
+                    C(9,8) &= \frac{9\cancel{\cdot 8\cdot 7\cdots}}{\cancel{8\cdot 7 \cdot 6\cdots}} \\
+                    \Aboxed{C(9,8) &= 9}
+                \end{align*}
+
+                \centering
+                \includegraphics[width=0.4\textwidth]{./assets/q1_answer_a.png}
+
+            }
+
             \item (5 points) How many possible microstates exist for a system containing four atoms of element A,
             two atoms of element B, and three atoms of element C?
+
+            \boxedanswer{
+                \begin{align*}
+                    \Omega &= \frac{N_0!}{n_A!\cdot n_B\cdot n_C!} \\
+                    N_0 &= n_A + n_B + n_C \\
+                    \begin{aligned}
+                        n_A! = 4 \\
+                        n_B! = 2 \\
+                        n_C! = 3 \\
+                    \end{aligned} \\
+                    N_0 &= 4 + 2 + 3 = 9 \\
+                    \Omega &= \frac{9!}{4!\cdot 2\cdot 3!} \\
+                    \Omega &= \frac{9\cdot8\cdot7\cancel{\cdot6}\cdot5\cancel{\cdot4\cdot3\cdot2}}{\cancel{4\cdot3\cdot2\cdot}2\cancel{\cdot 3\cdot 2}} \\
+                    \Omega &= \frac{9\cdot8\cdot7\cdot5}{2} \\
+                    \Aboxed{\Omega &= 1260}
+                \end{align*}
+            }
+
+        \pagebreak
+
         \item (5 points) The following lattices show microstates of a 4x4 lattice. Which is the most probable
             microstate consistent with the macrostate of being \SI{50}{\percent} occupied. Explain your answer.
+
+
         \end{enumerate}
 
-    \begin{figure}[h]
+    \begin{figure}[ht]
         \centering
-        \includegraphics[width=0.6\textwidth]{./assets/fig_1.png}
+        \includegraphics[width=0.5\textwidth]{./assets/fig_1.png}
     \end{figure}
+        \boxedanswer{
+            If each box represents a single microstate, all three are equally likely.
+            However, there are equivalent microstates that can look identical to 
+            these configurations. There are more equivalent microstates for the third
+            option (iii) than the other two, as there is less clustering and a more
+            even spread of atoms. The first option is representative of only a
+            single microstate, while the second option may have a few microstates.
+            But both options are visually lower entropy (less random, more clustered) 
+            than the third option. Therefore, the third option is most probable 
+            because there are more equivalent microstates that appear identical
+            to it.
+        }
 
     \pagebreak
 
