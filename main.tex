@@ -10,136 +10,255 @@
 \pagebreak
 
 \begin{enumerate}
-    \item 
-        \begin{enumerate}[a.]
-            \item (5 points) How many possible microstates exist for a system containing eight atoms of element
-            A and one atom of element B? Draw all possible microstates for such a system on a three-by-three
-            two-dimensional lattice.
+  \item
+    \begin{enumerate}[a.]
+      \item (5 points) How many possible microstates exist for a
+        system containing eight atoms of element
+        A and one atom of element B? Draw all possible microstates
+        for such a system on a three-by-three
+        two-dimensional lattice.
 
-            \boxedanswer{
-                This problem consists of 8 atoms and 9 possible spaces. As such, 
-                it can be expressed as:
+        \boxedanswer{
+          This problem consists of 8 atoms and 9 possible spaces. As such,
+          it can be expressed as:
 
-                \begin{align*}
-                    C(n,r) &= \frac{n!}{r!(n-r)!} \\
-                           & \begin{aligned}
-                               n &= 9 \\
-                               n &= 8 \\
-                           \end{aligned} \\
-                    C(9,8) &= \frac{9!}{8!\overbrace{1!}^1} \\
-                    C(9,8) &= \frac{9\cancel{\cdot 8\cdot 7\cdots}}{\cancel{8\cdot 7 \cdot 6\cdots}} \\
-                    \Aboxed{C(9,8) &= 9}
-                \end{align*}
+          \begin{align*}
+            C(n,r) &= \frac{n!}{r!(n-r)!} \\
+            &
+            \begin{aligned}
+              n &= 9 \\
+              n &= 8 \\
+            \end{aligned} \\
+            C(9,8) &= \frac{9!}{8!\overbrace{1!}^1} \\
+            C(9,8) &= \frac{9\cancel{\cdot 8\cdot
+            7\cdots}}{\cancel{8\cdot 7 \cdot 6\cdots}} \\
+            \Aboxed{C(9,8) &= 9}
+          \end{align*}
 
-                \centering
-                \includegraphics[width=0.4\textwidth]{./assets/q1_answer_a.png}
+          \centering
+          \includegraphics[width=0.4\textwidth]{./assets/q1_answer_a.png}
 
-            }
+        }
 
-            \item (5 points) How many possible microstates exist for a system containing four atoms of element A,
-            two atoms of element B, and three atoms of element C?
+      \item (5 points) How many possible microstates exist for a
+        system containing four atoms of element A,
+        two atoms of element B, and three atoms of element C?
 
-            \boxedanswer{
-                \begin{align*}
-                    \Omega &= \frac{N_0!}{n_A!\cdot n_B\cdot n_C!} \\
-                    N_0 &= n_A + n_B + n_C \\
-                    \begin{aligned}
-                        n_A! = 4 \\
-                        n_B! = 2 \\
-                        n_C! = 3 \\
-                    \end{aligned} \\
-                    N_0 &= 4 + 2 + 3 = 9 \\
-                    \Omega &= \frac{9!}{4!\cdot 2\cdot 3!} \\
-                    \Omega &= \frac{9\cdot8\cdot7\cancel{\cdot6}\cdot5\cancel{\cdot4\cdot3\cdot2}}{\cancel{4\cdot3\cdot2\cdot}2\cancel{\cdot 3\cdot 2}} \\
-                    \Omega &= \frac{9\cdot8\cdot7\cdot5}{2} \\
-                    \Aboxed{\Omega &= 1260}
-                \end{align*}
-            }
+        \boxedanswer{
+          \begin{align*}
+            \Omega &= \frac{N_0!}{n_A!\cdot n_B\cdot n_C!} \\
+            N_0 &= n_A + n_B + n_C \\
+            \begin{aligned}
+              n_A! = 4 \\
+              n_B! = 2 \\
+              n_C! = 3 \\
+            \end{aligned} \\
+            N_0 &= 4 + 2 + 3 = 9 \\
+            \Omega &= \frac{9!}{4!\cdot 2\cdot 3!} \\
+            \Omega &=
+            \frac{9\cdot8\cdot7\cancel{\cdot6}\cdot5\cancel{\cdot4\cdot3\cdot2}}{\cancel{4\cdot3\cdot2\cdot}2\cancel{\cdot
+            3\cdot 2}} \\
+            \Omega &= \frac{9\cdot8\cdot7\cdot5}{2} \\
+            \Aboxed{\Omega &= 1260}
+          \end{align*}
+        }
 
         \pagebreak
 
-        \item (5 points) The following lattices show microstates of a 4x4 lattice. Which is the most probable
-            microstate consistent with the macrostate of being \SI{50}{\percent} occupied. Explain your answer.
+      \item (5 points) The following lattices show microstates of a
+        4x4 lattice. Which is the most probable
+        microstate consistent with the macrostate of being
+        \SI{50}{\percent} occupied. Explain your answer.
 
-
-        \end{enumerate}
+    \end{enumerate}
 
     \begin{figure}[ht]
-        \centering
-        \includegraphics[width=0.5\textwidth]{./assets/fig_1.png}
+      \centering
+      \includegraphics[width=0.5\textwidth]{./assets/fig_1.png}
     \end{figure}
-        \boxedanswer{
-            If each box represents a single microstate, all three are equally likely.
-            However, there are equivalent microstates that can look identical to 
-            these configurations. There are more equivalent microstates for the third
-            option (iii) than the other two, as there is less clustering and a more
-            even spread of atoms. The first option is representative of only a
-            single microstate, while the second option may have a few microstates.
-            But both options are visually lower entropy (less random, more clustered) 
-            than the third option. Therefore, the third option is most probable 
-            because there are more equivalent microstates that appear identical
-            to it.
-        }
+    \boxedanswer{
+      If each box represents a single microstate, all three are equally likely.
+      However, there are equivalent microstates that can look identical to
+      these configurations. There are more equivalent microstates for the third
+      option (iii) than the other two, as there is less clustering and a more
+      even spread of atoms. The first option is representative of only a
+      single microstate, while the second option may have a few microstates.
+      But both options are visually lower entropy (less random, more clustered)
+      than the third option. Therefore, the third option is most probable
+      because there are more equivalent microstates that appear identical
+      to it.
+    }
 
     \pagebreak
 
-    \item Consider a small colloidal glass bead of mass m in a container of water held at temperature $T$. The
-    gravitational potential energy $U$ of the glass particle depends on its height above the bottom of the
+  \item Consider a small colloidal glass bead of mass m in a
+    container of water held at temperature $T$. The
+    gravitational potential energy $U$ of the glass particle depends
+    on its height above the bottom of the
     container z: $U(z) = mgz$, where $g$ is the acceleration due to gravity.
 
     \begin{enumerate}
-        \item Determine the probability $P(z)$ that the bead is found at a certain height $z$. Normalize the
-            probability distribution such that $\int_0^\infty P(z) = 1$.
-        \item Calculate the average height of the bead $\langle z\rangle$. Under what conditions would we expect particles
-            to “sediment” out of a solution?
-        \item In the high temperature limit (or $T \rightarrow \infty$), where can we expect to find the bead? \label{c}
-        \item Calculate the variance of the bead height $\langle z^2\rangle - \langle z\rangle^2$. \label{d}
-        \item Given what we have learned in part \ref{d}, re-interpret your answer to part \ref{c}. That is, at any
-            instant in time, where might the bead be found at high temperatures?
-        \item Calculate the average energy $\langle U \rangle$.
+      \item Determine the probability $P(z)$ that the bead is found
+        at a certain height $z$. Normalize the
+        probability distribution such that $\int_0^\infty P(z) = 1$.
+
+        \boxedanswer{
+          Assume that the probability distribution follows a
+          Boltzmann distribution:
+
+          \begin{align*}
+            P(z) &= Ae^{-\frac{U(z)}{k_BT}} \\
+            &
+            \begin{aligned}
+              U(z) &= mgz \\
+            \end{aligned} \\
+            P(z) &= Ae^{-\frac{mgz}{k_BT}} \\
+            \int_0^\infty Ae^{-\frac{mgz}{k_BT}} dz &= 1 \\
+            A\frac{k_BT}{mg}\left[e^{-\frac{mgz}{k_BT}}\right]_0^\infty &= 1 \\
+            A &= \frac{mg}{k_BT} \\
+            \Aboxed{P(z) &= \frac{mg}{k_BT}e^{-\frac{mgz}{k_BT}}}
+          \end{align*}
+        }
+
+      \item Calculate the average height of the bead $\langle
+        z\rangle$. Under what conditions would we expect particles
+        to “sediment” out of a solution?
+
+        \boxedanswer{
+          The average height can be found as follows:
+
+          \begin{align*}
+            \langle z\rangle &= \int_0^\infty
+            z\frac{mg}{k_BT}e^{-\frac{mgz}{k_BT}}dz \\
+            \langle z\rangle &= \frac{mg}{k_BT}\int_0^\infty
+            ze^{-\frac{mgz}{k_BT}}dz \\
+            &
+            \begin{aligned}
+              u &= \frac{mgz}{k_BT} \\
+              du &= \frac{mg}{k_BT}dz \\
+              dz &= \frac{k_BT}{mg}du \\
+              z &= \frac{uk_BT}{mg} \\
+            \end{aligned} \\
+            \langle z\rangle &= \frac{mg}{k_BT}\int_0^\infty
+            ze^{-\frac{mgz}{k_BT}}dz \\
+            \langle z\rangle &= \frac{mg}{k_BT}\int_0^\infty
+            \left( \frac{uk_BT}{mg} \right)e^{-u}\frac{k_BT}{mg}du \\
+            \langle z\rangle &= \frac{k_BT}{mg}\int_0^\infty
+            ue^{-u}du \\
+            \langle z\rangle &=
+            \frac{k_BT}{mg}\left[-\cancel{\left[ue^{-u}\right]_0^\infty} -
+            \overbrace{\int_0^\infty e^{-u} du}^{-1}\right] \\
+            \Aboxed{\langle z\rangle &= \frac{k_BT}{mg}}
+          \end{align*}
+        }
+
+        \pagebreak
+
+      \item In the high temperature limit (or $T \rightarrow
+        \infty$), where can we expect to find the bead? \label{c}
+
+        \boxedanswer{
+          The Boltzmann distribution becomes very flat at high temperatures,
+          and the average height scales with temperature. This indicates that
+          the bead can be found anywhere, and is independent of
+          height. Based on the
+          expression for the "average" value, one may think that beads would
+          be expected to "rise" with temperature, but this isn't
+          necessarily true.
+        }
+
+      \item Calculate the variance of the bead height $\langle
+        z^2\rangle - \langle z\rangle^2$. \label{d}
+
+        \boxedanswer{
+          \begin{align*}
+            \langle z^2\rangle &= \int_0^\infty
+            z^2\frac{mg}{k_BT}e^{-\frac{mgz}{k_BT}}dz \\
+            & u = \frac{mgz}{k_BT} \\
+            & z = \frac{uk_BT}{mg} \\
+            & dz = \frac{k_BT}{mg}du \\
+            \langle z^2\rangle &= \frac{mg}{k_BT}\int_0^\infty
+            \left(\frac{uk_BT}{mg}\right)^2e^{-u}\frac{k_BT}{mg}du \\
+            \langle z^2\rangle &= \left(\frac{k_BT}{mg}\right)^2\int_0^\infty
+            u^2e^{-u}du \\
+            \langle z^2\rangle &=
+            -\left(\frac{k_BT}{mg}\right)^2\left[(u^2 + 2u
+            +2)e^{-u}\right]_0^\infty \\
+            \langle z^2\rangle &= 2\left(\frac{k_BT}{mg}\right)^2 \\
+            \langle z \rangle &= \left(\frac{k_BT}{mg}\right) \\
+            \Aboxed{\langle z^2 \rangle - \langle z \rangle^2 &=
+            \left(\frac{k_BT}{mg}\right)^2}
+          \end{align*}
+        }
+
+      \item Given what we have learned in part \ref{d}, re-interpret
+        your answer to part \ref{c}. That is, at any
+        instant in time, where might the bead be found at high temperatures?
+
+        \boxedanswer{
+          This clearly shows that the deviation grows faster than the mean,
+          which means that the distribution flattens out with increasing
+          temperature, and the liklihood of finding the bead at any point
+          becomes approximately uniform.
+        }
+
+      \item Calculate the average energy $\langle U \rangle$.
+
+        \boxedanswer{
+          \begin{align*}
+            \langle U \rangle &= mg\langle z \rangle \\
+            \langle U \rangle &= mg\frac{k_BT}{mg} \\
+            \Aboxed{\langle U \rangle &= k_BT}
+          \end{align*}
+        }
+
     \end{enumerate}
-    
+
     \pagebreak
 
-    \item One simple model of a crystal consists of a collection of masses and springs. Consider one particular
-        “normal mode” of the crystal, characterized by natural frequency $\omega$. The vibrational energy associated
-        with this normal mode can be quantized such that the $n$\textsuperscript{th} energy level is given by
+  \item One simple model of a crystal consists of a collection of
+    masses and springs. Consider one particular
+    “normal mode” of the crystal, characterized by natural frequency
+    $\omega$. The vibrational energy associated
+    with this normal mode can be quantized such that the
+    $n$\textsuperscript{th} energy level is given by
 
     \begin{equation*}
-        \epsilon_n = \left(n + \frac{1}{2}\right)\hbar \omega
+      \epsilon_n = \left(n + \frac{1}{2}\right)\hbar \omega
     \end{equation*}
 
-
-    where $n = 0, 1, 2, \dots$ and $\hbar$ is Planck’s constant divided by $2\pi$. This is called the “Einstein model”
+    where $n = 0, 1, 2, \dots$ and $\hbar$ is Planck’s constant
+    divided by $2\pi$. This is called the “Einstein model”
     of a crystalline solid.
 
     \begin{figure}[h]
-        \centering
-        \includegraphics[width=0.4\textwidth]{./assets/fig_2.png}
+      \centering
+      \includegraphics[width=0.4\textwidth]{./assets/fig_2.png}
     \end{figure}
-    
+
     \begin{enumerate}[(a)]
 
-        \item Calculate the partition function $Z$. To simplify, take advantage of the formula for a convergent
-            geometric series:
+      \item Calculate the partition function $Z$. To simplify, take
+        advantage of the formula for a convergent
+        geometric series:
 
         \begin{equation*}
-            \sum_{n=0}^\infty x^n = \frac{1}{1 - x}
+          \sum_{n=0}^\infty x^n = \frac{1}{1 - x}
         \end{equation*}
 
-        \item Calculate the entropy, internal energy, and Helmholtz free energy of the crystal. 
-            You can express your results in terms of the “Einstein temperature” $\vartheta_E  ≡ \hbar \omega/k_B$. 
-            (Note that for diamonds, $\vartheta_E \approx \SI{1320}{K}$.)
+      \item Calculate the entropy, internal energy, and Helmholtz
+        free energy of the crystal.
+        You can express your results in terms of the “Einstein
+        temperature” $\vartheta_E  ≡ \hbar \omega/k_B$.
+        (Note that for diamonds, $\vartheta_E \approx \SI{1320}{K}$.)
 
-        \item Calculate the molar heat capacity $C_V$ . Plot $C_V /k_B$ as a function of $T /\vartheta_E$. (This model actually
-            does a good job at capturing the high-temperature behavior of real crystals! The low-temperature
-            requires some corrections, however.)
+      \item Calculate the molar heat capacity $C_V$ . Plot $C_V /k_B$
+        as a function of $T /\vartheta_E$. (This model actually
+          does a good job at capturing the high-temperature behavior
+          of real crystals! The low-temperature
+        requires some corrections, however.)
     \end{enumerate}
 
-
-
-
-    
 \end{enumerate}
 
 % \section*{Supporting code:}
