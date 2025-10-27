@@ -191,8 +191,8 @@
           \end{align*}
         }
 
-      \item Given what we have learned in part \ref{d}, re-interpret
-        your answer to part \ref{c}. That is, at any
+      \item Given what we have learned in part d, re-interpret
+        your answer to part c. That is, at any
         instant in time, where might the bead be found at high temperatures?
 
         \boxedanswer{
@@ -246,20 +246,87 @@
           \sum_{n=0}^\infty x^n = \frac{1}{1 - x}
         \end{equation*}
 
+        \boxedanswer{
+            \begin{align*}
+                Z &= \sum_{n=0}^\infty e^{-\frac{\epsilon_n}{k_BT}} \\
+                  & \begin{aligned}
+                    \epsilon_n &= \left(n + \frac{1}{2}\right)\hbar \omega \\
+                  \end{aligned} \\
+                Z &= \sum_{n=0}^\infty e^{-\frac{\hbar\omega}{k_BT}\left(n + \frac{1}{2}\right)} \\
+                Z &= e^{-\frac{\hbar\omega}{2k_BT}}\sum_{n=0}^\infty \left(e^{-\frac{\hbar\omega}{k_BT}}\right)^n \\
+                \Aboxed{Z &= \frac{e^{-\frac{\hbar\omega}{2k_BT}}}{1 - e^{-\frac{\hbar\omega}{k_BT}}}}
+            \end{align*}
+        }
+
+        \pagebreak
+
       \item Calculate the entropy, internal energy, and Helmholtz
         free energy of the crystal.
         You can express your results in terms of the “Einstein
         temperature” $\vartheta_E  ≡ \hbar \omega/k_B$.
         (Note that for diamonds, $\vartheta_E \approx \SI{1320}{K}$.)
 
+        \boxedanswer{
+            \begin{align*}
+                S &= N_0 k_B \ln Z + N_0 kT\left( \frac{\delta \ln Z}{\delta T} \right)_V \\
+                  &\begin{aligned}
+                    Z &= \frac{e^{-\frac{\hbar\omega}{2k_BT}}}{1 - e^{-\frac{\hbar\omega}{k_BT}}} \\
+                    \ln Z &= -\frac{\hbar\omega}{2k_BT} - \ln\left(1 - e^{-\frac{\hbar\omega}{k_BT}}\right) \\
+                      \frac{\delta \ln Z}{\delta T} &= 
+                      \frac{\hbar w}{k_BT^2\left(e^{\frac{\hbar\omega}{k_BT}} - 1\right)}
+                      + \frac{\hbar\omega}{2k_BT^2} \\
+                \end{aligned} \\
+                S &= N_0k_B\left[\ln\left( e^{-\frac{\hbar\omega}{2k_BT}}\right) 
+                    - \ln\left(1 - e^{-\frac{\hbar\omega}{k_BT}}\right) \right] 
+                    + N_0 k_BT\left( \frac{\hbar w}{k_BT^2\left(e^{\frac{\hbar\omega}{k_BT}} - 1\right)}
+                      + \frac{\hbar\omega}{2k_BT^2} \right) \\
+                \Aboxed{S &= \frac{N_0\hbar \omega}{T\left(e^{\frac{\vartheta_E}{T}} - 1\right)}
+                -N_0k_B\ln\left(1 - e^{-\frac{\vartheta_E}{T}}\right)} \\
+                    U &= N_0k_BT^2\left(\frac{\delta \ln Z}{\delta T}\right)_V \\
+                    U &= N_0k_BT^2\left(\frac{\hbar w}{k_BT^2\left(e^{\frac{\hbar\omega}{k_BT}} - 1\right)}
+                      + \frac{\hbar\omega}{2k_BT^2}\right) \\
+                    U &= N_0\hbar\omega\left(\frac{1}{\left(e^{\frac{\hbar\omega}{k_BT}} - 1\right)}
+                      + \frac{1}{2}\right) \\
+                    \Aboxed{U &= \frac{N_0\hbar\omega}{2}\frac{\left(
+                        1 + e^{-\frac{\vartheta}{T}}\right)}{
+                    \left(1 - e^{-\frac{\vartheta}{T}}\right)}} \\
+                    F &= -N_0k_BT\ln Z \\
+                    F &= -N_0k_BT\left[-\frac{\hbar\omega}{2k_BT} - \ln\left(1 - e^{-\frac{\hbar\omega}{k_BT}}\right)\right] \\
+                    \Aboxed{F &= \frac{N_0\hbar\omega}{2} + N_0k_BT\ln\left(1 - e^{-\frac{\vartheta_E}{T}}\right)}
+            \end{align*}
+        }
+
+        \pagebreak
+
       \item Calculate the molar heat capacity $C_V$ . Plot $C_V /k_B$
         as a function of $T /\vartheta_E$. (This model actually
           does a good job at capturing the high-temperature behavior
           of real crystals! The low-temperature
         requires some corrections, however.)
+
+        \boxedanswer{
+            \begin{align*}
+                C_V &= \left(\frac{\delta U}{\delta T}\right)_V \\
+                C_V &= \frac{\delta}{\delta T}\left(
+                    \frac{N_0\hbar\omega}{2}\frac{\left(
+                        1 + e^{-\frac{\vartheta}{T}}\right)}{
+                        \left(1 - e^{-\frac{\vartheta}{T}}\right)}
+                \right) \\
+                        \Aboxed{C_V &= \frac{N_0\hbar\omega\vartheta_E e^{\frac{\vartheta_E}{T}}}
+                        {T^2\left(e^{\frac{\vartheta_E}{T}} - 1\right)^2}} \\
+                            \frac{C_V}{k_B} &= N_0e^{\frac{\vartheta_E}{T}}\left(\frac{\vartheta_E}
+                        {T\left(e^{\frac{\vartheta_E}{T}} - 1\right)}\right)^2 \\
+            \end{align*}
+        }
+
     \end{enumerate}
 
 \end{enumerate}
+
+\begin{figure}[h]
+    \centering
+        \includegraphics[width=0.6\textwidth]{./assets/Figure_1.png}
+\end{figure}
 
 % \section*{Supporting code:}
 % \inputminted{julia}{./calculations/src/calculations.jl}

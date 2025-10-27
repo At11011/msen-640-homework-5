@@ -11,3 +11,4 @@ svg-inkscape/
 pdflatex*
 main.synctex*
 *.minted
+*.fls
